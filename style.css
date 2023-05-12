@@ -4,7 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+body{
+    font-family: Montserrat;
+}
+h2{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
 /* HEADER */
 header{
     height: 80px;
@@ -12,6 +24,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center; 
+    
 }
 
 /* MAIN */
@@ -27,10 +40,56 @@ nav li{
         display: inline;
 }
  /* SIDE-BAR */
- #side-bar{
+ .side-bar{
     width: 10%;
     background-color: black;
+    text-align: center;
+    padding-top: 5px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
  }
+#icona{
+  filter: invert();
+  margin-bottom: 10PX;
+ }
+ #logo{
+    display: none;
+ }
+.side-bar i{
+    color: #d2d2d2;
+    margin: 20px 0;
+    padding-right: 5px;
+}
+span{
+    display: none;
+}
+.playlist{
+    display: none;
+    margin-top: 15PX;
+    font-weight: bold;
+    color: gray;
+}
+.add-box{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    display: inline;
+    margin-right: 10px;
+}
+
+.row-addplaylist{
+    display: flex;
+    align-items: center;
+}
+.row{
+    margin: 20px 0;
+}
 
 /* FOOTER */
 footer{
@@ -39,4 +98,33 @@ footer{
     display: flex;
     position: sticky;
     bottom: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px){
+    #icona{
+        display: none;
+    }
+    #logo{
+        display: block;
+        height: 3rem;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+    .side-bar{
+        width: 300px;
+        
+        padding-top: 20px;
+        text-align: start;
+    }
+    .sidebar-nav > div, .sidebar-profile{
+        padding-left: 15px;
+    }
+    span{
+        display: inline-block;
+    }
+    .playlist{
+        display: inline-block;
+    }
+    
 }
