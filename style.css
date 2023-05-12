@@ -4,3 +4,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+header{
+    height: 80px;
+    background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+/* MAIN */
+main{
+    display: flex;
+}
+.main-menu{
+    width: 100%;
+    text-align: center;
+}
+nav li{
+        list-style-type: none;
+        display: inline;
+}
+ /* SIDE-BAR */
+ #side-bar{
+    width: 10%;
+    background-color: black;
+ }
+
+/* FOOTER */
+footer{
+    height: 80px;
+    background-color: #282828;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+}
