@@ -31,6 +31,10 @@ img{
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.p-rl-xs{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
 /* HEADER */
 header{
     height: 80px;
@@ -38,6 +42,14 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center; 
+}
+.btn{
+    border:  1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.btn a{
+    color: white;
 }
 
 /* MAIN */
@@ -51,7 +63,7 @@ main{
 nav li{
     list-style-type: none;
     display: inline-block;
-    padding: 15px 5px;
+    padding: 15px 10px;
 }
 
 
@@ -105,7 +117,7 @@ sub, .sub{
     color: #d2d2d2;
     margin: 20px 0;
     padding-right: 5px;
-    
+    width: 35px;
 }
 span{
     display: none;
@@ -135,14 +147,44 @@ span{
 .row{
     margin: 20px 0;
 }
+.profile span{
+    color: white;
+}
 
 /* FOOTER */
 footer{
     height: 80px;
     background-color: #282828;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.song{
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+}
+.song-desc{
+    flex-grow: 1;
+}
+.song-current > img{
+    width: 40px;
+}
+.song-desc sub{
+    display: block;
+}
+.song-desc h2, .song-desc sub{
+    padding:0 0 0 5px;
+    font-size: 0.8rem;
+}
+.liked i{
+    color: gray;
 
+}
+.liked a{
+    display: block;
+    padding-bottom: 5px;
+}
 /* RESPONSIVE TABLET*/
 @media screen and (min-width: 768px){
     #icona{
@@ -168,6 +210,11 @@ footer{
     .playlist{
         display: inline-block;
     }
+    .profile{
+        border-top: 1px solid gray;
+        width: 90%;
+    }
+    
 }
 /* RESPONSIVE LAPTOP */
 @media screen and (min-width: 992px){
