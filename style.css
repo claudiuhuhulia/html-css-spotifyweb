@@ -35,6 +35,23 @@ img{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+/* HOVER */
+
+li a:hover{
+    text-decoration: underline 3PX  greenyellow  ;
+}
+.card:hover i{
+    display: block;
+}
+.card:hover img{
+    background-color: black;
+    opacity: 0.5;
+}
+a:hover{
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    color: white;
+}
+
 /* HEADER */
 header{
     height: 80px;
@@ -65,12 +82,6 @@ nav li {
     display: inline-block;
     padding: 15px 10px;
 }
-
-li a:hover{
-    text-decoration: underline 3PX  greenyellow  ;
-}
-
-
 nav{
     background-color: #141922;
     display: flex;
@@ -79,6 +90,16 @@ nav{
 .card{
     flex-basis: 50%;
     padding: 5px;
+    position: relative;;
+}
+.card i{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 7rem;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
 }
 
 .box-container{
