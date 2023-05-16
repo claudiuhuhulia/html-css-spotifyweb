@@ -60,16 +60,21 @@ main{
     width: 100%;
     text-align: center;
 }
-nav li{
+nav li {
     list-style-type: none;
     display: inline-block;
     padding: 15px 10px;
+}
+
+li a:hover{
+    text-decoration: underline 3PX  greenyellow  ;
 }
 
 
 nav{
     background-color: #141922;
     display: flex;
+    justify-content: center;
 }
 .card{
     flex-basis: 50%;
@@ -157,6 +162,7 @@ footer{
     background-color: #282828;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .song{
     flex-basis: 25%;
@@ -266,5 +272,11 @@ footer{
 @media screen and (min-width: 992px){
 .card{
     flex-basis: 25%;
+}
+.song{
+    flex-basis: 20%;
+}
+.liked a{
+    display: inline;
 }
 }
